@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %} Test {% endblock %}
+{% block head %} {{ super() }} {% endblock %}
+{% block body %}
+<h1>ChiTown Innovate - Expo Event Routing</h1>
+    <form action="/" method="post">
+        <button type="submit">Generate Map</button>
+    </form>
+    {% if map_html %}
+        <div>
+            <p>The time is: {{ random_time }}</p>
+            <p>The date is: {{ random_date }}</p>
+            <p>You are at: {{ random_coords }}</p>
+            <p>Closest Upcoming Expo Event: {{ closest_event_name }}</p>
+            <p>Description: {{ closest_event_desc }}</p>
+            <p>Time: {{ closest_event_time }} , {{ closest_event_date}}</p>
+            <p>The Event is at: {{ closest_event_location }}</p>
+            <p>Directions: {{ directions_html|safe }}</p>
+        </div>
+
+        {% include "map.html" %}?t={{ timestamp }}
+        
+    {% endif %}
+{% endblock %}

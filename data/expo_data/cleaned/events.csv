@@ -1,0 +1,210 @@
+VenueID,StartTime,EndTime,Date,Event Title,Event Description
+1,8:00,10:00,9/20/24,Tech Demo: Virtual Reality,Explore the latest in virtual reality technology and its applications.
+2,10:30,12:00,9/20/24,Networking Brunch,Connect with fellow tech enthusiasts and professionals over brunch.
+3,13:00,14:30,9/20/24,University Speaker: AI Innovations,Hear from leading university researchers about breakthroughs in artificial intelligence.
+4,15:00,16:30,9/20/24,Startup Pitch Session,Watch startups pitch their innovative tech solutions to potential investors.
+5,17:00,18:30,9/20/24,Panel Discussion: Cybersecurity,Join a panel of experts discussing the latest trends and challenges in cybersecurity.
+6,19:00,21:00,9/20/24,Evening Keynote: Tech Trends,Don't miss this keynote speech on the future of technology and its impact on society.
+7,8:30,10:00,9/21/24,Workshop: Coding for Beginners,Learn the basics of coding in this interactive workshop for beginners.
+8,10:30,12:00,9/21/24,Tech Expo: Gadgets Galore,Explore an exhibition of the latest gadgets and tech products.
+9,13:00,14:30,9/21/24,University Speaker: Robotics,Discover the latest advancements in robotics from a leading university expert.
+10,15:00,16:30,9/21/24,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+11,17:00,18:30,9/21/24,Panel Discussion: Green Tech,Learn about the latest developments in sustainable technology.
+12,19:00,20:30,9/21/24,Evening Mixer,End the day with a casual networking mixer.
+13,8:00,9:30,9/22/24,Breakfast Roundtable: Women in Tech,Join a roundtable discussion on empowering women in the tech industry.
+14,10:00,11:30,9/22/24,Tech Demo: Drones,Experience the latest in drone technology and its various applications.
+15,12:00,13:30,9/22/24,Lunch and Learn: Cloud Computing,Enjoy lunch while learning about the latest trends in cloud computing.
+16,14:00,15:30,9/22/24,University Speaker: Data Science,Gain insights from a university expert on the evolving field of data science.
+17,16:00,17:30,9/22/24,Workshop: IoT in Everyday Life,Explore how the Internet of Things is transforming our daily lives.
+18,18:00,19:30,9/22/24,Closing Keynote: The Future of Work,Hear a thought-provoking keynote on how technology is shaping the future of work.
+19,9:00,10:30,9/20/24,Panel Discussion: EdTech Innovations,Join a panel exploring innovative educational technologies.
+20,11:00,12:30,9/20/24,Networking Lunch,Network with industry professionals and peers over lunch.
+21,13:30,15:00,9/20/24,Tech Talk: Blockchain Beyond Bitcoin,Learn about the diverse applications of blockchain technology.
+22,15:30,17:00,9/20/24,Startup Showcase,Discover cutting-edge startups and their groundbreaking technologies.
+23,17:30,19:00,9/20/24,Evening Reception,Wind down the day with an evening reception.
+24,9:30,11:00,9/21/24,Workshop: Mobile App Development,Learn the fundamentals of developing mobile applications in this hands-on workshop.
+25,11:30,13:00,9/21/24,Tech Talk: AI Ethics,Delve into the ethical considerations of artificial intelligence.
+1,8:00,9:30,9/20/24,Virtual Reality Showcase,"Experience the future with our latest VR product, the VisionPro 360, presented by VR guru John Smith."
+2,10:00,11:30,9/20/24,Networking Breakfast,Join tech leaders like Jane Doe from Tech Innovators Inc. for a networking breakfast and discussion on industry trends.
+3,12:00,13:30,9/20/24,University Spotlight: AI Advances,Professor Emily Johnson from the University of Tech will discuss groundbreaking research in artificial intelligence and machine learning.
+4,14:00,15:30,9/20/24,Startup Pitch Competition,"Watch as startups like NextGen Tech and InnovateX pitch their latest products to a panel of investors, including venture capitalist Michael Lee."
+5,16:00,17:30,9/20/24,Cybersecurity Panel,Join cybersecurity experts like David Kim from SecureTech as they discuss the latest in data protection and online safety.
+6,18:00,19:30,9/20/24,Evening Keynote: The Tech Revolution,"Hear from keynote speaker Linda Garcia, CEO of FutureTech, as she explores the impact of technology on our daily lives and future."
+7,9:00,10:30,9/21/24,3D Printing Workshop,"Learn about the latest advancements in 3D printing technology and get hands-on experience with the PrintMaster Pro, led by expert technician Alex Martinez."
+8,11:00,12:30,9/21/24,Tech Expo: Gadgets and Gizmos,"Explore an exhibition of the latest gadgets, including the SmartWatch X and the DroneFlyer 3000, presented by tech companies from around the world."
+9,13:00,14:30,9/21/24,Blockchain Explained,Discover how blockchain technology is transforming industries with blockchain specialist Sarah Lee.
+10,15:00,16:30,9/21/24,Green Tech Innovations,"Learn about sustainable technology solutions for a greener future, presented by eco-tech company GreenWorld Innovations."
+11,17:00,18:30,9/21/24,Networking Happy Hour,Wind down and network with fellow tech enthusiasts and professionals at our happy hour event.
+12,19:00,20:30,9/21/24,Evening Fireside Chat,"Join a fireside chat with tech industry veterans like Robert Chen, discussing the challenges and opportunities in the current tech landscape."
+13,8:30,10:00,9/22/24,Women in Tech Breakfast,"Celebrate women in technology with a special breakfast event featuring inspiring speakers like Rachel Patel, founder of WomenTech Network."
+14,10:30,12:00,9/22/24,Drone Technology Demo,"Witness the latest in drone technology with a live demonstration of the SkyExplorer 5000, led by drone expert Kevin Johnson."
+15,12:30,14:00,9/22/24,Lunch & Learn: IoT Innovations,"Enjoy lunch while learning about the Internet of Things and its applications in smart homes and cities, presented by IoT specialist Laura Sanchez."
+16,14:30,16:00,9/22/24,Data Science in Action,Explore real-world applications of data science with a presentation by data scientist Michael Thompson from DataTech Analytics.
+17,16:30,18:00,9/22/24,Closing Panel: The Future of Tech,Join our closing panel discussion with industry leaders as they share their insights on the future of technology and innovation.
+25,9:00,10:30,9/20/24,Smart Home Innovations,Discover the latest in smart home technology with a showcase of the HomeTech Pro system by Lisa Nguyen.
+26,11:00,12:30,9/20/24,Robotics in Healthcare,Learn about the role of robotics in healthcare with a presentation by Dr. Mark Robinson from RoboMed Solutions.
+27,13:30,15:00,9/20/24,Augmented Reality in Education,Explore the use of augmented reality in education with a talk by educator Sarah Johnson and a demo of the EduAR app.
+28,16:00,17:30,9/20/24,FinTech Innovations,Join financial technology experts like James Lee from FinTech Innovators for a discussion on the latest trends in FinTech.
+29,18:30,20:00,9/20/24,Evening Workshop: Coding with Python,Get hands-on experience coding with Python in this evening workshop led by developer Emily Chen.
+30,8:30,10:00,9/21/24,Breakfast Talk: Tech for Social Good,"Start your day with a talk on how technology is being used for social good, featuring speaker Alex Johnson from TechForGood."
+31,10:30,12:00,9/21/24,Virtual Collaboration Tools,Discover the latest tools for virtual collaboration in a presentation by tech consultant Maria Gonzalez.
+32,13:00,14:30,9/21/24,The Future of Gaming,Dive into the future of gaming with a talk by game developer Kevin Smith and a demo of the new game HyperWorld.
+33,15:30,17:00,9/21/24,Wearable Tech Trends,Explore the latest trends in wearable technology with a showcase of the FitTrack Pro wearable by tech enthusiast Rachel Lee.
+34,17:30,19:00,9/21/24,Evening Keynote: The Digital Revolution,"Don't miss the evening keynote by digital transformation expert David Johnson, discussing the impact of the digital revolution."
+35,9:30,11:00,9/22/24,Startups in Sustainability,Hear from startups like EcoTech Solutions and GreenStart about their innovative approaches to sustainability in technology.
+36,11:30,13:00,9/22/24,Panel: Diversity in Tech,"Join a panel discussion on promoting diversity and inclusion in the tech industry, featuring speakers from diverse backgrounds."
+37,14:00,15:30,9/22/24,Workshop: Building Mobile Apps,Learn how to build mobile apps in this hands-on workshop led by mobile developer Sophia Martinez.
+38,16:00,17:30,9/22/24,Closing Ceremony: Innovate Awards,"Join us for the closing ceremony where we'll announce the winners of the Innovate Awards, recognizing outstanding achievements in technology."
+1,8:00,9:30,9/20/24,Early Bird Tech Talk: Quantum Computing,Start your day with an early bird tech talk on quantum computing by physicist Dr. Emily White.
+2,10:00,11:30,9/20/24,Workshop: UX Design Principles,Learn about UX design principles in this interactive workshop led by UX designer Michael Brown.
+3,12:00,13:30,9/20/24,Lunch & Learn: Big Data Analytics,"Enjoy lunch while learning about big data analytics and its applications in various industries, presented by data analyst Sarah Kim."
+4,14:00,15:30,9/20/24,Panel: The Future of AI,Join a panel of experts as they discuss the future of artificial intelligence and its potential impact on society.
+5,16:00,17:30,9/20/24,Networking Tea,"Take a break and network with fellow attendees over tea, featuring a special guest speaker from the tech community."
+6,18:00,19:30,9/20/24,Evening Talk: Tech Ethics,"End your day with an evening talk on the ethics of technology, featuring ethical tech advocate David Green."
+7,9:00,10:30,9/21/24,Innovation in E-Commerce,"Explore innovation in e-commerce with a presentation by e-commerce expert Lisa Johnson, showcasing the latest trends and tools."
+25,10:00,11:30,9/20/24,Social Impact Tech Talk,Explore how technology can drive social change with a talk by social entrepreneur Anna Johnson.
+26,12:00,13:30,9/20/24,Workshop: Tech for Accessibility,"Learn about innovations in technology that improve accessibility for people with disabilities, led by accessibility advocate David Lee."
+27,14:30,16:00,9/20/24,Panel: Bridging the Digital Divide,Join a panel discussion on efforts to bridge the digital divide and ensure equal access to technology.
+28,17:00,18:30,9/20/24,Networking Event: Tech for Good,Meet like-minded individuals passionate about using technology for social good at this networking event.
+29,19:00,20:30,9/20/24,Evening Keynote: Empowering Communities with Tech,Hear from keynote speaker Maria Smith about empowering communities through technology initiatives.
+30,8:30,10:00,9/21/24,Breakfast Roundtable: Women in Tech Leadership,Join a roundtable discussion on promoting women's leadership in the tech industry.
+31,10:30,12:00,9/21/24,Youth Tech Innovation Showcase,Discover innovative tech projects created by young entrepreneurs and students.
+32,13:00,14:30,9/21/24,Tech for Environmental Sustainability,Learn about technologies that support environmental sustainability with a presentation by eco-tech expert Alex Green.
+33,15:00,16:30,9/21/24,Workshop: Building Inclusive Tech Communities,Participate in a workshop on strategies for building inclusive and diverse tech communities.
+34,17:30,19:00,9/21/24,Evening Talk: Ethics in AI,Join an evening discussion on ethical considerations in artificial intelligence development.
+35,9:00,10:30,9/22/24,Tech Solutions for Urban Challenges,"Explore tech solutions addressing urban challenges such as transportation, housing, and public safety."
+36,11:00,12:30,9/22/24,Panel: Social Entrepreneurship in Tech,Hear from a panel of social entrepreneurs about leveraging technology to address social issues.
+37,13:30,15:00,9/22/24,Workshop: Digital Literacy for All,Engage in a workshop focused on promoting digital literacy across different age groups and communities.
+1,15:30,17:00,9/22/24,Closing Panel: The Role of Tech in Social Justice,Join the closing panel discussion on the role of technology in advancing social justice and equity.
+2,9:30,11:00,9/20/24,Tech for Mental Health,Discover how technology is being used to support mental health and well-being with a talk by mental health advocate Sarah Lee.
+3,11:30,13:00,9/20/24,Community Tech Initiatives,Learn about community-driven tech initiatives that aim to address local issues and foster community engagement.
+4,14:00,15:30,9/20/24,Workshop: Safe Online Spaces,Participate in a workshop on creating safe and respectful online spaces for diverse communities.
+5,16:30,18:00,9/20/24,Tech and Education Equity,Explore the intersection of technology and education equity with a presentation by education advocate Emily Brown.
+6,18:30,20:00,9/20/24,Evening Mixer: Tech for Social Impact,Join an evening mixer where tech professionals and social impact advocates can connect and share ideas.
+7,8:30,10:00,9/21/24,Breakfast Talk: Diversity in Tech Hiring,Start your day with a talk on strategies for promoting diversity and inclusion in tech hiring practices.
+8,10:30,12:00,9/21/24,Innovations in Health Tech,Discover the latest innovations in health technology that are improving patient care and public health.
+3,13:00,14:30,9/20/24,Keynote: The Future of Tech,Hear from leading experts about the future trends in technology.
+4,15:00,16:00,9/20/24,Workshop: Coding for Kids,An interactive coding workshop for children aged 8-12.
+5,16:30,18:00,9/20/24,Panel: Women in Tech,Panel discussion on the challenges and successes of women in the tech industry.
+6,18:30,20:00,9/20/24,Welcome Reception,Join us for an evening of networking and welcome drinks.
+7,9:00,10:30,9/21/24,Session: Cybersecurity Essentials,Learn about the latest in cybersecurity and how to protect your business.
+8,11:00,12:30,9/21/24,Lunch & Learn: AI Innovations,Discuss the latest innovations in AI over lunch.
+9,13:00,14:30,9/21/24,Workshop: IoT in Your Home,A workshop on integrating IoT devices for smart home automation.
+10,15:00,17:00,9/21/24,Hackathon Kickoff,Form teams and start the 24-hour hackathon challenge.
+11,10:00,11:30,9/22/24,Closing Keynote: Tech and Society,Reflect on the impact of technology on society and our daily lives.
+12,12:00,13:30,9/22/24,Expo Farewell Brunch,Wrap up the expo with a farewell brunch and closing remarks.
+0,09:00,10:30,9/20/2024,Keynote Address: Future of AI,Join us for a visionary talk on the future of artificial intelligence and its impact on society.
+1,10:45,12:00,9/20/2024,Workshop: Intro to Blockchain,Get an introduction to blockchain technology and its applications in various industries.
+2,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+3,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+4,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+5,09:30,10:30,9/21/2024,Panel Discussion: Future of Mobility,Explore the future of transportation and mobility with industry experts.
+6,11:00,12:30,9/21/2024,Workshop: Design Thinking,Learn how to apply design thinking principles to solve complex problems.
+7,13:00,14:30,9/21/2024,Product Demo: Augmented Reality,Experience the latest in augmented reality technology with live demos.
+8,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+9,17:00,18:30,9/21/2024,Panel Discussion: Green Tech,Learn about the latest developments in sustainable technology.
+10,09:30,10:30,9/22/2024,Workshop: Data Visualization,Learn techniques for creating impactful data visualizations for business insights.
+11,11:00,12:30,9/22/2024,Panel Discussion: Cybersecurity Trends,Explore current trends and challenges in cybersecurity with industry leaders.
+12,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+13,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+14,09:00,10:30,9/20/2024,Keynote Address: Future of AI,Join us for a visionary talk on the future of artificial intelligence and its impact on society.
+15,10:45,12:00,9/20/2024,Workshop: Intro to Blockchain,Get an introduction to blockchain technology and its applications in various industries.
+16,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+17,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+18,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+19,09:30,10:30,9/21/2024,Panel Discussion: Future of Mobility,Explore the future of transportation and mobility with industry experts.
+20,11:00,12:30,9/21/2024,Workshop: Design Thinking,Learn how to apply design thinking principles to solve complex problems.
+21,13:00,14:30,9/21/2024,Product Demo: Augmented Reality,Experience the latest in augmented reality technology with live demos.
+22,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+23,17:00,18:30,9/21/2024,Panel Discussion: Green Tech,Learn about the latest developments in sustainable technology.
+24,09:30,10:30,9/22/2024,Workshop: Data Visualization,Learn techniques for creating impactful data visualizations for business insights.
+25,11:00,12:30,9/22/2024,Panel Discussion: Cybersecurity Trends,Explore current trends and challenges in cybersecurity with industry leaders.
+26,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+27,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+28,09:00,10:30,9/20/2024,Keynote Address: Future of AI,Join us for a visionary talk on the future of artificial intelligence and its impact on society.
+29,10:45,12:00,9/20/2024,Workshop: Intro to Blockchain,Get an introduction to blockchain technology and its applications in various industries.
+30,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+31,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+32,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+33,09:30,10:30,9/21/2024,Panel Discussion: Future of Mobility,Explore the future of transportation and mobility with industry experts.
+34,11:00,12:30,9/21/2024,Workshop: Design Thinking,Learn how to apply design thinking principles to solve complex problems.
+35,13:00,14:30,9/21/2024,Product Demo: Augmented Reality,Experience the latest in augmented reality technology with live demos.
+36,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+37,17:00,18:30,9/21/2024,Panel Discussion: Green Tech,Learn about the latest developments in sustainable technology.
+38,09:30,10:30,9/22/2024,Workshop: Data Visualization,Learn techniques for creating impactful data visualizations for business insights.
+38,10:45,12:00,9/20/2024,Workshop: Intro to Machine Learning,Learn the basics of machine learning and its applications in various industries.
+37,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+36,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+35,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+34,09:30,10:30,9/21/2024,Panel Discussion: Future of E-Commerce,Explore the future trends and challenges in the e-commerce industry.
+33,11:00,12:30,9/21/2024,Workshop: Digital Marketing Strategies,Learn effective digital marketing strategies to grow your business online.
+32,13:00,14:30,9/21/2024,Product Demo: Virtual Reality,Experience the latest in virtual reality technology with live demos.
+31,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+30,17:00,18:30,9/21/2024,Panel Discussion: Future of AI in Healthcare,Learn about the impact of AI on the healthcare industry.
+29,09:30,10:30,9/22/2024,Workshop: Advanced Data Analytics,Learn advanced techniques for analyzing big data and deriving insights.
+28,11:00,12:30,9/22/2024,Panel Discussion: Future of Work,Explore how technology is reshaping the future of work and employment.
+27,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+26,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+25,09:00,10:30,9/20/2024,Keynote Address: Future of Robotics,Join us for a visionary talk on the future of robotics and automation.
+24,10:45,12:00,9/20/2024,Workshop: Cloud Computing Fundamentals,Learn the basics of cloud computing and its advantages for businesses.
+23,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+22,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+21,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+20,09:30,10:30,9/21/2024,Panel Discussion: Future of Space Exploration,Explore the future of space exploration and the role of technology.
+19,11:00,12:30,9/21/2024,Workshop: UX Design Principles,Learn the key principles of user experience design for creating engaging products.
+18,13:00,14:30,9/21/2024,Product Demo: Artificial Intelligence,Experience the latest in AI technology with live demos.
+17,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+16,17:00,18:30,9/21/2024,Panel Discussion: Future of Transportation,Discuss the future trends and innovations in transportation technology.
+15,09:30,10:30,9/22/2024,Workshop: Internet of Things (IoT),Learn about the IoT ecosystem and its impact on various industries.
+14,11:00,12:30,9/22/2024,Panel Discussion: Future of Retail,Explore the future of retail and how technology is changing the shopping experience.
+13,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+12,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+11,09:00,10:30,9/20/2024,Keynote Address: Future of Quantum Computing,Join us for a visionary talk on the future of quantum computing.
+10,10:45,12:00,9/20/2024,Workshop: Cybersecurity Essentials,Learn the essential principles of cybersecurity to protect your data and privacy.
+9,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+8,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+7,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+6,09:30,10:30,9/21/2024,Panel Discussion: Future of Artificial Intelligence,Explore the future possibilities and challenges of AI.
+5,11:00,12:30,9/21/2024,Workshop: 3D Printing Technologies,Learn about the latest advancements in 3D printing and its applications.
+4,13:00,14:30,9/21/2024,Product Demo: Robotics,Experience the latest in robotics technology with live demos.
+3,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+2,17:00,18:30,9/21/2024,Panel Discussion: Future of Energy,Discuss the future of energy and sustainability in a technology-driven world.
+1,09:30,10:30,9/22/2024,Workshop: Augmented Reality Applications,Learn about the practical applications of augmented reality in various industries.
+1,10:45,12:00,9/20/2024,Workshop: IoT Security,Learn about the importance of security in the Internet of Things (IoT) ecosystem.
+3,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+5,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+7,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+9,09:30,10:30,9/21/2024,Panel Discussion: Future of Virtual Reality,Explore the future of virtual reality technology and its impact on various industries.
+11,11:00,12:30,9/21/2024,Workshop: Cloud Security Best Practices,Learn best practices for securing cloud-based applications and data.
+13,13:00,14:30,9/21/2024,Product Demo: AI-Powered Chatbots,Experience the latest advancements in AI-powered chatbot technology.
+15,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+17,17:00,18:30,9/21/2024,Panel Discussion: Future of Augmented Reality,Discuss the future potential and challenges of augmented reality technology.
+19,09:30,10:30,9/22/2024,Workshop: Cybersecurity Threat Intelligence,Learn about the latest trends in cybersecurity threat intelligence.
+21,11:00,12:30,9/22/2024,Panel Discussion: Future of AI Ethics,Explore the ethical implications of artificial intelligence and machine learning.
+23,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+25,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+27,09:00,10:30,9/20/2024,Keynote Address: Future of Quantum Computing,Join us for a visionary talk on the future of quantum computing.
+29,10:45,12:00,9/20/2024,Workshop: Cybersecurity Essentials,Learn the essential principles of cybersecurity to protect your data and privacy.
+31,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+33,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+35,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+37,09:30,10:30,9/21/2024,Panel Discussion: Future of Artificial Intelligence,Explore the future possibilities and challenges of AI.
+2,11:00,12:30,9/21/2024,Workshop: 3D Printing Technologies,Learn about the latest advancements in 3D printing and its applications.
+4,13:00,14:30,9/21/2024,Product Demo: Robotics,Experience the latest in robotics technology with live demos.
+6,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+8,17:00,18:30,9/21/2024,Panel Discussion: Future of Transportation,Discuss the future trends and innovations in transportation technology.
+10,09:30,10:30,9/22/2024,Workshop: Internet of Things (IoT),Learn about the IoT ecosystem and its impact on various industries.
+12,11:00,12:30,9/22/2024,Panel Discussion: Future of Retail,Explore the future of retail and how technology is changing the shopping experience.
+14,13:00,14:30,9/22/2024,Startup Showcase,See the latest innovations from startups in the tech industry.
+16,15:00,16:30,9/22/2024,Networking Happy Hour,Wrap up the conference with a networking happy hour and drinks.
+18,09:00,10:30,9/20/2024,Keynote Address: Future of Robotics,Join us for a visionary talk on the future of robotics and automation.
+20,10:45,12:00,9/20/2024,Workshop: Cloud Computing Fundamentals,Learn the basics of cloud computing and its advantages for businesses.
+22,12:30,13:30,9/20/2024,Lunch Break,Enjoy a delicious lunch and networking opportunity with fellow attendees.
+24,14:00,15:30,9/20/2024,Startup Pitch Competition,Watch startups pitch their innovative ideas to a panel of judges and investors.
+26,16:00,17:30,9/20/2024,Networking Mixer,Join us for a networking mixer to connect with industry professionals and entrepreneurs.
+28,09:30,10:30,9/21/2024,Panel Discussion: Future of Space Exploration,Explore the future of space exploration and the role of technology.
+30,11:00,12:30,9/21/2024,Workshop: UX Design Principles,Learn the key principles of user experience design for creating engaging products.
+32,13:00,14:30,9/21/2024,Product Demo: Artificial Intelligence,Experience the latest in AI technology with live demos.
+34,15:00,16:30,9/21/2024,Networking Coffee Break,Take a break and network with fellow attendees over coffee.
+36,17:00,18:30,9/21/2024,Panel Discussion: Future of Energy,Discuss the future of energy and sustainability in a technology-driven world.
+38,09:30,10:30,9/22/2024,Workshop: Augmented Reality Applications,Learn about the practical applications of augmented reality in various industries.

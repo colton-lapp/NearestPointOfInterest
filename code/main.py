@@ -23,8 +23,10 @@ from sqlalchemy_utils import database_exists, create_database
 import psycopg2
 
 import googlemaps
+from folium.features import GeoJsonTooltip
 from shapely.geometry import LineString, MultiLineString
 import polyline
+from shapely import wkt
 
 # load config.py from ../utils/config.py
 sys.path.append('utils')
@@ -171,6 +173,105 @@ def get_next_events(user_time_location, n_return = 5):
     return result_gdf
 
 
+def get_parks_and_waterways(user_time_location, n_miles = 2):
+    
+    parks_table_name = 'chi_parks'
+    waterways_table_name = 'Chi_water'
+
+    # user point WKT
+    point_wkt = user_time_location.geometry.iloc[0].wkt
+
+    # query parks within 2 miles of user
+    parks_query = f"""
+                    SELECT
+                        *,
+                        ST_AsText(geom) AS geom_wkt,
+                        ST_Distance(
+                            ST_Transform(geom, 26986),
+                            ST_Transform(ST_GeomFromText('{point_wkt}', 4326), 26986)
+                        ) / 1609.34 AS distance_miles
+                    FROM
+                        {parks_table_name}
+                    WHERE
+                        ST_DWithin(
+                            ST_Transform(geom, 26986),
+                            ST_Transform(ST_GeomFromText('{point_wkt}', 4326), 26986),
+                            2 * 1609.34
+                        );
+                    """
+
+    
+    # query waterways within 5 miles of user
+    waterways_query =  f"""
+                        SELECT
+                            *,
+                            ST_AsText(geom) AS geom_wkt,
+                            ST_Distance(
+                                ST_Transform(geom, 26986),
+                                ST_Transform(ST_GeomFromText('{point_wkt}', 4326), 26986)
+                            ) / 1609.34 AS distance_miles
+                        FROM
+                            {waterways_table_name}
+                        WHERE
+                            ST_DWithin(
+                                ST_Transform(geom, 26986),
+                                ST_Transform(ST_GeomFromText('{point_wkt}', 4326), 26986),
+                                5 * 1609.34
+                            );
+                        """
+
+    
+    # Execute the query and load the results into a GeoDataFrame
+    with con.cursor() as cursor:
+        # Execute parks query and fetch data
+        cursor.execute(parks_query)
+        rows = cursor.fetchall()
+        colnames = [desc[0] for desc in cursor.description]
+        parks_df = pd.DataFrame(rows, columns=colnames)
+        # Convert WKT in 'geom_wkt' to shapely Geometries
+        if 'geom_wkt' in parks_df.columns:
+            parks_df['geom'] = parks_df['geom_wkt'].apply(wkt.loads)
+            parks_df.drop(columns=['geom_wkt'], inplace=True)  # Optional: remove the WKT column
+        # Create GeoDataFrame
+        parks_gdf = gpd.GeoDataFrame(parks_df, geometry='geom')
+        
+        # Execute waterways query and fetch data
+        cursor.execute(waterways_query)
+        rows = cursor.fetchall()
+        colnames = [desc[0] for desc in cursor.description]
+        waterways_df = pd.DataFrame(rows, columns=colnames)
+        if 'geom_wkt' in waterways_df.columns:
+            waterways_df['geom'] = waterways_df['geom_wkt'].apply(wkt.loads)
+            waterways_df.drop(columns=['geom_wkt'], inplace=True)  # Optional: remove the WKT column
+        # Create GeoDataFrame
+        waterways_gdf = gpd.GeoDataFrame(waterways_df, geometry='geom')
+
+    return parks_gdf, waterways_gdf
+
+def get_comms():
+
+    table_name = 'chi_comm'
+
+    # query to get all community areas
+    comm_query = f""" SELECT *, ST_AsText(geom) AS geom_wkt
+                        FROM {table_name}
+                        """
+
+    # Execute the query and load the results into a GeoDataFrame
+    with con.cursor() as cursor:
+        cursor.execute(comm_query)
+        rows = cursor.fetchall()
+        colnames = [desc[0] for desc in cursor.description]
+        comm_df = pd.DataFrame(rows, columns=colnames)
+        if 'geom_wkt' in comm_df.columns:
+            comm_df['geom'] = comm_df['geom_wkt'].apply(wkt.loads)
+            comm_df.drop(columns=['geom_wkt'], inplace=True)  # Optional: remove the WKT column
+        # Create GeoDataFrame
+        comm_gdf = gpd.GeoDataFrame(comm_df, geometry='geom')
+
+    return comm_gdf
+
+
 def get_route_to_next_event( user_lat_lon, event_lat_lon):
    
     gmaps = googlemaps.Client(key=GMAPS_API_KEY)
@@ -305,6 +406,7 @@ def create_map():
     # ----------------- Add route to closest event ----------------- #
 
     # subset closest event 
+    
     if len(events) != 0:
         # get closest event after sorting events by distance_miles
         events = events.sort_values(by='distance_miles')
@@ -327,16 +429,62 @@ def create_map():
         closest_event = None
 
 
+    # ----------------- Add Chicago Parks and waterways ----------------- #
+
+    parks_gdf, waterways_gdf = get_parks_and_waterways(user_time_location)
+
+    # Create a FeatureGroup to hold the park polygons
+    feature_group = folium.FeatureGroup(name="Chicago Parks")
+    # add parks as green fill no outline with on hover popup of "label" column
+    for idx, row in parks_gdf.iterrows():
+        folium.GeoJson(
+            data=row['geom'],
+            style_function=lambda x: {'fillColor': 'green', 'fillOpacity': 0.3, 'color': 'none'},  # Set outline color to 'none'
+            highlight_function=lambda x: {'weight': 3, 'fillOpacity': 0.5}, tooltip=row['label']).add_to(feature_group)
+        
+    # Add the FeatureGroup to the map
+    feature_group.add_to(m)
+
+    # Create a FeatureGroup to hold the waterway lines
+    feature_group = folium.FeatureGroup(name="Chicago Waterways")
+    # add waterways as blue lines with on hover popup of "label" column
+    for idx, row in waterways_gdf.iterrows():
+        folium.GeoJson(
+            data=row['geom'],
+            style_function=lambda x: {'fillColor': 'blue', 'fillOpacity': 0.2, 'color': 'none'},
+            highlight_function=lambda x: {'weight': 1, 'color': 'blue'}, tooltip=row['name']).add_to(feature_group)
+        
+    # Add the FeatureGroup to the map
+    feature_group.add_to(m)
+
+
+    # ----------------- Get Closest Comm ----------------- #
+
+    comm_gdf = get_comms()
+    closest_comm = comm_gdf.loc[comm_gdf.distance(user_time_location.geometry.iloc[0]).idxmin(), 'distitle']
+
+
+
+
+    
+
     # ----------------- Finalize Map ----------------- #
 
     folium.TileLayer('CartoDB positron', name='Minimal Base Map').add_to(m)
     folium.LayerControl().add_to(m)
-    m.fit_bounds(m.get_bounds())
+    
+    # fit bounds to 1 mile buffer of user location
+    m.fit_bounds([ [user_time_location['lat'].iloc[0] - 0.01, user_time_location['lon'].iloc[0] - 0.01],
+                   [user_time_location['lat'].iloc[0] + 0.01, user_time_location['lon'].iloc[0] + 0.01] ])
+    
 
     
 
     # save map to templates/map.html
-    m.save('templates/map.html')
+    try:
+        m.save('templates/map.html')
+    except:
+        pass
     try: 
         m.save('/Users/coltonlapp/Dropbox/My Mac (Coltons-MacBook-Pro.local)/Desktop/SCHOOL/Year2_Spring/Spatial DataScience/NearestPointOfInterest/code/templates/map.html')
     except:
@@ -346,7 +494,7 @@ def create_map():
     out_dict = {'map': m,
          'random_time': user_time_location['datetime'].iloc[0].strftime('%I:%M %p'),
          'random_date': user_time_location['datetime'].iloc[0].strftime('%m/%d/%Y'),
-         'random_coords': str(user_time_location['lat'].iloc[0]) + ' ' + str(user_time_location['lon'].iloc[0]) ,
+         'random_coords': "(" +str( round(user_time_location['lat'].iloc[0], 4)) + ', ' + str(round(user_time_location['lon'].iloc[0], 4)) + ")",
          'closest_event_location' : closest_event['name'] if found_event else None,
          'closest_event_name': closest_event['eventtitle'] if found_event else None,
          'closest_event_desc' : closest_event['eventdescription'] if found_event else None,
@@ -354,7 +502,8 @@ def create_map():
          'closest_event_date' : closest_event['event_start'].strftime('%m/%d/%Y') if found_event else None,
          'closest_event': closest_event if found_event else None,
          'directions_result': directions_result if found_event else None,
-         'directions_html': directions_result['directions_html'] if found_event else None}
+         'directions_html': directions_result['directions_html'] if found_event else [None, None],
+         'closest_comm': closest_comm}
     
     return out_dict
 
@@ -362,5 +511,4 @@ if __name__ == 'main':
     create_map()
     print('Map created successfully!')
 
-
-
+create_map()

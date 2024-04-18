@@ -1,17 +1,59 @@
 {% extends "layout.html" %}
-{% block title %} Test {% endblock %}
-{% block head %} {{ super() }} {% endblock %}
+{% block title %} ChiTown Innovate - Expo Event Routing {% endblock %}
+{% block head %}
+    {{ super() }}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2A9D8F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            height: 150px;
+            margin: 0 10px;
+        }
+    </style>
+{% endblock %}
 {% block body %}
 <h1>ChiTown Innovate - Expo Event Routing</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='img/chicago_city_logo.jpeg') }}" alt="Chicago Flag">
+        <img src="{{ url_for('static', filename='img/coltonlapp_gis_logo.png') }}" alt="Colton Lapp Logo">
+    </div>
     <form action="/" method="post">
         <button type="submit">Generate Map</button>
     </form>
+
     {% if map_html %}
         <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h2 style="color: #2A9D8F;">Your Journey to Innovation</h2>
-            <p>Welcome to <strong>ChiTech Innovate</strong>, the hub of technological breakthroughs in Chicago. As you navigate through the bustling city, let us guide you to the heart of innovation.</p>
-            <p>It's currently <strong>{{ random_time }}</strong> on <strong>{{ random_date }}</strong>. You are located at <em>{{ random_coords }}</em>.</p>
-            <p>The next big opportunity to connect with like-minded innovators is at the "<strong>{{ closest_event_name }}</strong>" event. Here’s a brief about what awaits you:</p>
+            <h2 style="color: #041816;">Your Journey to Innovation</h2>
+            <p>Welcome to <strong>ChiTech Innovate 2024</strong>, the leading tech conference in Chicago that highlights cutting-edge innovations from around the globe. As you participate in the conference activities, don't forget to explore the variety of amenities that Chicago has to offer.</p>
+            <p>It's currently <strong>{{ random_time }}</strong> on <strong>{{ random_date }}</strong>. You are located in the "<strong>{{ closest_comm }}</strong>" neighborhood at <em>{{ random_coords }}</em>.</p>
+            <p>The next opportunity to connect with event atendees is at the "<strong>{{ closest_event_name }}</strong>" event. Here’s a brief for that event:</p>
             <blockquote style="background-color: #E9ECEF; padding: 10px; border-left: 3px solid #2A9D8F;">
                 <p><strong>Event Name:</strong> {{ closest_event_name }}</p>
                 <p><strong>Description:</strong> {{ closest_event_desc }}</p>

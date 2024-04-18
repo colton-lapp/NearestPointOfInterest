@@ -32,6 +32,7 @@ def index():
         closest_event = out['closest_event']
         directions_result = out['directions_result']
         directions_html = out['directions_html']
+        closest_comm = out['closest_comm']
 
     elif request.method == 'GET':
         map_html = None
@@ -45,6 +46,7 @@ def index():
         closest_event = None
         directions_html = None
         closest_event_date = None
+        closest_comm = None
         
     timestamp = int(time.time())  # Get the current timestamp
 
@@ -56,7 +58,7 @@ def index():
                            closest_event_name=closest_event_name,
                            closest_event_desc=closest_event_desc, closest_event_time=closest_event_time,
                            closest_event_date=closest_event_date,
-                           closest_event=closest_event, directions_html=directions_html)
+                           closest_event=closest_event, directions_html=directions_html, closest_comm=closest_comm)
 
 @app.after_request
 def add_header(response):

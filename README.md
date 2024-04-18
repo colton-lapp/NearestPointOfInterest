@@ -130,4 +130,4 @@
 
 
 # Generated Map Demo:
-[Link to demo of map](code/templates/map.html)
+[Link to demo of map](https://colton-lapp.github.io/Lapp_Portfolio/final_project_example_map.html)
